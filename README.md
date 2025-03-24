@@ -42,7 +42,7 @@ What is the formula for your force? Including descriptions/definitions for the s
   - k = 8.988 * 10^9 (N*m^2)/c^2
 
 - Does this force require any new information to be added to the `Orb` class? If so, what is it and what data type will you use?
-  - + or - classifcation
+  - sign classifcation
 
 - Does this force interact with other `Orbs`, or is it applied based on the environment?
   - based on other orbs
