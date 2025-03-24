@@ -36,19 +36,19 @@ What is the formula for your force? Including descriptions/definitions for the s
 
 ### Custom Force
 - What information that is already present in the `Orb` or `OrbNode` classes does this force use?
-  - YOUR ANSWER HERE
+  - it is similar to gravity formula. so it will use distance squared.
 
 - Does this force require any new constants, if so what are they and what values will you try initially?
   - k = 8.988 * 10^9 (N*m^2)/c^2
 
 - Does this force require any new information to be added to the `Orb` class? If so, what is it and what data type will you use?
-  - YOUR ANSWER HERE
+  - + or - classifcation
 
 - Does this force interact with other `Orbs`, or is it applied based on the environment?
   - based on other orbs
 
 - In order to calculate this force, do you need to perform extra intermediary calculations? If so, what?
-  - YOUR ANSWER HERE
+  - erm maybeee idk
 
 --- 
 ### Simulation 1: Gravity
@@ -68,22 +68,20 @@ YOUR ANSWER HERE
 ### Simulation 3: Drag
 Describe what your drag simulation will look like. Explain how it will be setup, and how it should behave while running.
 
-YOUR ANSWER HERE
 
 ![image](https://github.com/user-attachments/assets/cf7e3aca-274f-42f2-ab79-136b79892d89)
 
 
 --- 
 
-### Simulation 4: Custom force
+### Simulation 4: REPSULSEION
 Describe what your Custom force simulation will look like. Explain how it will be setup, and how it should behave while running.
-
-YOUR ANSWER HERE
+Will cause orbs to repel each other. Depends based on opposite charges and magnitude of charges (maybe can identify + or - charges with color?)
 
 --- 
 
 ### Simulation 5: Combination
 Describe what your combination simulation will look like. Explain how it will be setup, and how it should behave while running.
 
-YOUR ANSWER HERE
+Huge mess!!!
 
