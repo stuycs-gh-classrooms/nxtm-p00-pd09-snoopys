@@ -31,20 +31,21 @@ All projects will require the following:
 ### Forumla
 What is the formula for your force? Including descriptions/definitions for the symbols. (You may include a picture of the formula if it is not easily typed.)
 
-YOUR ANSWER HERE
+![image](https://github.com/user-attachments/assets/3cea99a8-108a-45ee-b716-68987045c927)
+
 
 ### Custom Force
 - What information that is already present in the `Orb` or `OrbNode` classes does this force use?
   - YOUR ANSWER HERE
 
 - Does this force require any new constants, if so what are they and what values will you try initially?
-  - YOUR ANSWER HERE
+  - k = 8.988 * 10^9 (N*m^2)/c^2
 
 - Does this force require any new information to be added to the `Orb` class? If so, what is it and what data type will you use?
   - YOUR ANSWER HERE
 
 - Does this force interact with other `Orbs`, or is it applied based on the environment?
-  - YOUR ANSWER HERE
+  - based on other orbs
 
 - In order to calculate this force, do you need to perform extra intermediary calculations? If so, what?
   - YOUR ANSWER HERE
@@ -59,7 +60,7 @@ PVector getGravity(Orb other, float G) {
     float strength = G * mass*other.mass;
     //dont want to divide by 0!
     float r = max(center.dist(other.center), MIN_SIZE);
-    strength = strength/ pow(r, 2);
+    strength = strength/ pow(r, 2);formula for repulsion
     PVector force = other.center.copy();
     force.sub(center);
     force.mult(strength);
