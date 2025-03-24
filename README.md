@@ -53,16 +53,8 @@ What is the formula for your force? Including descriptions/definitions for the s
 --- 
 ### Simulation 1: Gravity
 Describe how you will attempt to simulate orbital motion.
-PVector getGravity(Orb other, float G) {
-    float strength = G * mass*other.mass;
-    //dont want to divide by 0!
-    float r = max(center.dist(other.center), MIN_SIZE);
-    strength = strength/ pow(r, 2);formula for repulsion
-    PVector force = other.center.copy();
-    force.sub(center);
-    force.mult(strength);
-    return force;
-  }
+![image](https://github.com/user-attachments/assets/5030223c-a0f3-4b00-8036-c745d859c7ab)
+
 
 --- 
 
@@ -78,14 +70,8 @@ Describe what your drag simulation will look like. Explain how it will be setup,
 
 YOUR ANSWER HERE
 
-PVector getDragForce(float cd) {
-    float dragMag = velocity.mag();
-    dragMag = -0.5 * dragMag * dragMag * cd;
-    PVector dragForce = velocity.copy();
-    dragForce.normalize();
-    dragForce.mult(dragMag);
-    return dragForce;
-  }
+![image](https://github.com/user-attachments/assets/cf7e3aca-274f-42f2-ab79-136b79892d89)
+
 
 --- 
 
