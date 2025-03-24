@@ -54,6 +54,17 @@ YOUR ANSWER HERE
 ### Simulation 1: Gravity
 Describe how you will attempt to simulate orbital motion.
 
+
+PVector getGravity(Orb other, float G) {
+    float strength = G * mass*other.mass;
+    //dont want to divide by 0!
+    float r = max(center.dist(other.center), MIN_SIZE);
+    strength = strength/ pow(r, 2);
+    PVector force = other.center.copy();
+    force.sub(center);
+    force.mult(strength);
+    return force;
+  }
 --- 
 
 ### Simulation 2: Spring
@@ -67,6 +78,15 @@ YOUR ANSWER HERE
 Describe what your drag simulation will look like. Explain how it will be setup, and how it should behave while running.
 
 YOUR ANSWER HERE
+
+PVector getDragForce(float cd) {
+    float dragMag = velocity.mag();
+    dragMag = -0.5 * dragMag * dragMag * cd;
+    PVector dragForce = velocity.copy();
+    dragForce.normalize();
+    dragForce.mult(dragMag);
+    return dragForce;
+  }
 
 --- 
 
