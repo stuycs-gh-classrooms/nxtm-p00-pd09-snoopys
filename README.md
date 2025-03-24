@@ -76,6 +76,7 @@ Describe what your drag simulation will look like. Explain how it will be setup,
 
 ### Simulation 4: REPSULSION
 Describe what your Custom force simulation will look like. Explain how it will be setup, and how it should behave while running.
+
 Will cause orbs to repel each other. Depends based on opposite charges and magnitude of charges (maybe can identify + or - charges with color?)
 
 --- 
