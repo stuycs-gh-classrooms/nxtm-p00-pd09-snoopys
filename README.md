@@ -51,12 +51,9 @@ What is the formula for your force? Including descriptions/definitions for the s
   - YOUR ANSWER HERE
 
 --- 
-
 ### Simulation 1: Gravity
 Describe how you will attempt to simulate orbital motion.
-
-
-**PVector getGravity(Orb other, float G) {
+PVector getGravity(Orb other, float G) {
     float strength = G * mass*other.mass;
     //dont want to divide by 0!
     float r = max(center.dist(other.center), MIN_SIZE);
@@ -65,7 +62,8 @@ Describe how you will attempt to simulate orbital motion.
     force.sub(center);
     force.mult(strength);
     return force;
-  }**
+  }
+
 --- 
 
 ### Simulation 2: Spring
