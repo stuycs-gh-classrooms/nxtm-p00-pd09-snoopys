@@ -85,4 +85,5 @@ Will cause orbs to repel each other. Depends based on opposite charges and magni
 Describe what your combination simulation will look like. Explain how it will be setup, and how it should behave while running.
 
 Huge mess!!!
+The fixed orb will attract the other orbs due to gravity. The Orbs are attached by springs. They will also repel and deviate from the "natural order" they are in bc of their charges. This will affects the other orbs bc of drag force. Their movements will also undergo collsions and chaos. 
 
