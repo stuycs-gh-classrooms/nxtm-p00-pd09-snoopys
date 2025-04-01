@@ -61,7 +61,7 @@ Describe how you will attempt to simulate orbital motion.
 ### Simulation 2: Spring
 Describe what your spring simulation will look like. Explain how it will be setup, and how it should behave while running.
 
-YOUR ANSWER HERE
+At set length, it will turn red when stretched and green when compressed from the center of the orbs.
 
 --- 
 
@@ -77,7 +77,7 @@ Describe what your drag simulation will look like. Explain how it will be setup,
 ### Simulation 4: REPSULSION
 Describe what your Custom force simulation will look like. Explain how it will be setup, and how it should behave while running.
 
-Will cause orbs to repel each other. Depends based on opposite charges and magnitude of charges (maybe can identify + or - charges with color?)
+Will cause orbs to repel each other. Depends based on opposite charges and magnitude of charges (maybe can identify + or - charges with color?) Assign orbs a number 1 or 2. If orb = 1, it will be negative. If orb = 2, it will be positive. Move orb together or apart a certain distance based on the charges and multiply them by their mass and constant.
 
 --- 
 
@@ -85,4 +85,5 @@ Will cause orbs to repel each other. Depends based on opposite charges and magni
 Describe what your combination simulation will look like. Explain how it will be setup, and how it should behave while running.
 
 Huge mess!!!
+The fixed orb will attract the other orbs due to gravity. The Orbs are attached by springs. They will also repel and deviate from the "natural order" they are in bc of their charges. This will affects the other orbs bc of drag force. Their movements will also undergo collsions and chaos. 
 
