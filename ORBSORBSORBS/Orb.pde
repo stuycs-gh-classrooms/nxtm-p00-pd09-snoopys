@@ -55,6 +55,7 @@ class Orb {
     dragForce.mult(dragMag);
     return dragForce;
   }
+  
 
   PVector getGravity(Orb other, float G) {
     float strength = G * mass*other.mass;

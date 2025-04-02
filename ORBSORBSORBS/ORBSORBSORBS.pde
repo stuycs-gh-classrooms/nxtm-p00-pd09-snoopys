@@ -24,7 +24,6 @@ void setup() {
 
   earth = new FixedOrb(width/2, height * 200, 1, 20000);
   makeOrbs();
-
 }//setup
 
 void draw() {
@@ -42,7 +41,6 @@ void draw() {
 
   o0.move(toggles[BOUNCE]);
   o1.move(toggles[BOUNCE]);
-
 }//draw
 
 
@@ -58,15 +56,22 @@ void makeOrbs() {
   o2.previous = o1;
   o2.next = o3;
   o3.previous = o2;
-
 }
 
 
 void keyPressed() {
-  if (key == ' ') { toggles[MOVING] = !toggles[MOVING]; }
-  if (key == 'g') { toggles[GRAVITY] = !toggles[GRAVITY]; }
-  if (key == 'b') { toggles[BOUNCE] = !toggles[BOUNCE]; }
-  if (key == 'd') { toggles[DRAGF] = !toggles[DRAGF]; }
+  if (key == ' ') {
+    toggles[MOVING] = !toggles[MOVING];
+  }
+  if (key == 'g') {
+    toggles[GRAVITY] = !toggles[GRAVITY];
+  }
+  if (key == 'b') {
+    toggles[BOUNCE] = !toggles[BOUNCE];
+  }
+  if (key == 'd') {
+    toggles[DRAGF] = !toggles[DRAGF];
+  }
   if (key == 'r') {
     makeOrbs();
   }
@@ -80,8 +85,11 @@ void displayMode() {
 
   for (int m=0; m<toggles.length; m++) {
     //set box color
-    if (toggles[m]) { fill(0, 255, 0); }
-    else { fill(255, 0, 0); }
+    if (toggles[m]) {
+      fill(0, 255, 0);
+    } else {
+      fill(255, 0, 0);
+    }
 
     float w = textWidth(modes[m]);
     rect(x, 0, w+5, 20);
@@ -89,4 +97,19 @@ void displayMode() {
     text(modes[m], x+2, 2);
     x+= w+5;
   }
+
+  
+  if (toggles[GRAVITY]){
+    PVector gravity = o1.getGravity(o0, G_CONSTANT);
+    o1.applyForce(gravity);
+  }//gravity
+
+
+  if (toggles[DRAGF]) {
+    PVector dragForce = o0.getDragForce(DRAGF);
+    o0.applyForce(dragForce);
+    o1.applyForce(dragForce);
+  }//drag
+  
+  
 }//display
