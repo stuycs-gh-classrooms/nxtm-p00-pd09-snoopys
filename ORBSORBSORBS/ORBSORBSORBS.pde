@@ -20,10 +20,11 @@ FixedOrb earth;
 OrbNode o0, o1, o2, o3;
 
 void setup() {
-  size(600, 600);
-
-  earth = new FixedOrb(width/2, height * 200, 1, 20000);
-  makeOrbs();
+size(600, 600);
+println("before");
+earth = new FixedOrb(30,70,40,28);
+println("erm");
+makeOrbs();
 }//setup
 
 void draw() {
