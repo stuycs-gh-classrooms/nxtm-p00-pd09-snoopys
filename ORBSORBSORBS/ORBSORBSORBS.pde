@@ -20,11 +20,11 @@ FixedOrb earth;
 OrbNode o0, o1, o2, o3;
 
 void setup() {
-size(600, 600);
+  size(600, 600);
 println("before");
-earth = new FixedOrb(30,70,40,28);
-println("erm");
-makeOrbs();
+  earth = new FixedOrb(30,70,40,28);
+    println("erm");
+  makeOrbs();
 }//setup
 
 void draw() {
@@ -34,6 +34,8 @@ void draw() {
 
   o0.display();
   o1.display();
+  earth.display();
+  println("help");
 
   PVector sf = o0.getSpring(o0.next, SPRING_LENGTH, SPRING_K);
   o0.applyForce(sf);
