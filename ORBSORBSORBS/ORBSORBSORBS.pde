@@ -22,7 +22,7 @@ OrbNode o0, o1, o2, o3;
 void setup() {
   size(600, 600);
 println("before");
-  earth = new FixedOrb(30,70,40,28);
+  earth = new FixedOrb(300,300,30,28);
     println("erm");
   makeOrbs();
 }//setup
